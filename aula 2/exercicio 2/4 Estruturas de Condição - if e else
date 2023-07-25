@@ -1,0 +1,18 @@
+// Assuma que você esteja desenvolvendo um programa
+// em Dart para verificar se uma pessoa é maior de idade
+// Se a idade for maior ou igual a 18, o programa deve
+// exibir a mensagem "Você é maior de idade". Caso
+// contrário, o programa deve exibir a mensagem "Você é
+// menor de idade".
+
+void main () {
+  final int idade =  18;
+  
+  if (idade >= 18){
+    print("é maior de idade");
+  }
+  else{
+    print("é menor de idade");
+  }
+
+}
