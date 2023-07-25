@@ -10,25 +10,31 @@ void main () {
 
 int dia = 1;
   
-  if (dia == 1) {
+switch ( dia ) { 
+   case 1: 
     print("hoje é segunda-feira");
-  }
-  else if (dia == 2) {
+    break;
+    
+   case 2: 
     print("hoje é terça feira");
-  }
-  else if (dia == 3) {
+    break;
+    
+   case 3:
     print("hoje é quarta feira");
-  }
-  else if (dia == 4) {
+    break;
+      
+   case 4:
     print("hoje é quinta feira");
-  }
-  else if (dia == 5) {
+    break;
+      
+   case 5:
     print("hoje é sexta feira");
-  }
-  else if (dia == 6) {
+    break;
+    
+   case 6:
     print("hoje é sabado feira");
-  }
-  else if (dia == 7) {
+    break;
+    
+   case 7:
     print("hoje é domingo feira");
-  }
-}
+    break;
