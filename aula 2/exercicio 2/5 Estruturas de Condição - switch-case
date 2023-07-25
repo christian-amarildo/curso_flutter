@@ -1,0 +1,34 @@
+// Vamos supor que você esteja escrevendo um 
+// programa em Dart que solicita ao usuário um dia da 
+// semana usando números (1 para segunda-feira, 2 para 
+// terça-feira, etc.) e exibe uma mensagem 
+// correspondente ao dia da semana usando a estrutura 
+// switch-case. Por exemplo, se o usuário digitar 1, o 
+// programa deve exibir a mensagem "Hoje é segunda- feira"
+ 
+void main () {
+
+int dia = 1;
+  
+  if (dia == 1) {
+    print("hoje é segunda-feira");
+  }
+  else if (dia == 2) {
+    print("hoje é terça feira");
+  }
+  else if (dia == 3) {
+    print("hoje é quarta feira");
+  }
+  else if (dia == 4) {
+    print("hoje é quinta feira");
+  }
+  else if (dia == 5) {
+    print("hoje é sexta feira");
+  }
+  else if (dia == 6) {
+    print("hoje é sabado feira");
+  }
+  else if (dia == 7) {
+    print("hoje é domingo feira");
+  }
+}
