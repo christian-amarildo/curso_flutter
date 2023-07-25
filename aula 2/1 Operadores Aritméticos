@@ -1,0 +1,33 @@
+void main() {
+  
+  print("system: insira um número");
+  int numero = 6;
+  print("* valor inserido pelo usuario: 6");
+  
+  print("system: insira outro numero");
+  int numero2 = 3;
+  print("* valor inserido pelo usuario: 3");
+ 
+ //Soma: some os dois números e exiba o resultado na tela.
+  int soma = numero + numero2;
+  print("a soma dos dois numeros é: $soma");
+ 
+ //Subtração: subtraia o segundo número do primeiro número e exiba o resultado na tela.
+  int subtracao = numero - numero2;
+  print("a subtração dos dois numeros é: $subtracao");
+ 
+ //Multiplicação: multiplique os dois números e exiba o resultado na tela.
+  int multiplicacao = numero * numero2;
+  print("a multiplicação dos dois numeros é: $multiplicacao");
+ 
+ //Divisão: divida o primeiro número pelo segundo número e exiba o resultado na tela.
+  double divisao = numero / numero2;
+  print("a divisão dos dois números é: $divisao");
+
+ //Resto da divisão: calcule o resto da divisão do primeiro número pelo segundo número e exiba o resultado na tela.
+  int resto = numero % numero2;
+  print("o resto da divisão é: $resto");
+
+}
+
+ 
