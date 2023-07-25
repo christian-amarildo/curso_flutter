@@ -10,6 +10,7 @@ void main () {
 
 int dia = 1;
   
+
 switch ( dia ) { 
    case 1: 
     print("hoje é segunda-feira");
@@ -38,3 +39,5 @@ switch ( dia ) {
    case 7:
     print("hoje é domingo feira");
     break;
+}
+}
