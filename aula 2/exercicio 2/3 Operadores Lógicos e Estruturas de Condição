@@ -1,0 +1,37 @@
+// Solicita ao usuário um número
+// Verifica se o número é maior que 10 e menor que 20
+// Exibe uma mensagem indicando se a condição é verdadeira ou falsa
+
+// Verifica se o número é igual a 0 ou igual a 50
+// Exibe uma mensagem indicando se a condição é verdadeira ou falsa
+
+// Verifica se o número é diferente de 100 ou igual a 200
+// Exibe uma mensagem indicando se a condição é verdadeira ou falsa
+
+void main () {
+  double numero =  15;
+  
+  print("o número é maior que 10 e menor que 20?");
+   if (20 > numero && numero>10 ) {
+     print("verdadeiro");
+   } 
+   else {
+     print("false");
+   }
+  print("");
+  print("o número é igual a 0 ou igual a 50?");
+   if ( numero==0 || numero==50) {
+    print("verdadeiro");
+  }
+  else {
+    print("false");
+    }
+  print("");
+  print("o número é diferente de 100 ou igual a 200?");
+  if (numero != 100 || numero==200){
+    print("verdadeiro");
+  }
+  else {
+    print("false");
+  }
+}
