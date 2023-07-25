@@ -1,0 +1,24 @@
+// Suponha que você está desenvolvendo um programa em Dart para 
+// verificar se um número digitado pelo usuário é par ou ímpar. 
+// O programa deve exibir uma mensagem indicando se o número é par ou ímpar.
+
+void main () {
+ int numero1 = 5;
+ int numero2 = 2;
+ 
+ if (numero1 % 2 == 0) {
+    print("o numero $numero1 é par");
+ }
+ else {
+   print("o numero $numero1 é impar");
+ } 
+ 
+ if (numero1 % 2 == 0) {
+    print("o numero $numero2 é par");
+ }
+ else {
+   print("o numero $numero2 é impar");
+ } 
+ 
+}
+ 
