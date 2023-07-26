@@ -1,0 +1,8 @@
+void main() {
+  // Iniciando a contagem regressiva de 10
+  for (int i = 10; i >= 1; i--) {
+    print(i);
+  }
+  // Exibindo a mensagem final antes do lançamento
+  print("Lançamento do foguete realizado!");
+}
