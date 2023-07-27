@@ -1,0 +1,29 @@
+class Veiculo {
+  String marca;
+  String modelo;
+  int anoFabricacao;
+
+  Veiculo({
+    required this.marca,
+    required this.modelo,
+    required this.anoFabricacao,
+  });
+
+  void exibirInformacoes() {
+    print('Marca: $marca');
+    print('Modelo: $modelo');
+    print('Ano de Fabricação: $anoFabricacao');
+  }
+}
+
+void main() {
+  // Criando um veículo a partir da classe Veiculo
+  Veiculo meuVeiculo = Veiculo(
+    marca: 'Nissan',
+    modelo: 'Flexstar',
+    anoFabricacao: 2019,
+  );
+
+  // Exibindo as informações do veículo
+  meuVeiculo.exibirInformacoes();
+}
