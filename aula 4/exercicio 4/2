@@ -1,0 +1,85 @@
+// A concessionária também trabalha com
+// carros e motos, e, apesar desses veículos
+// possuírem vários atributos, apenas dois
+// atributos de cada serão importantes para o
+// sistema: a quilometragem por ano e o
+// número de portas de um carro, e para a
+// moto, o número de cilindradas e se possui
+// partida elétrica.
+// 2) Crie classes para representar esses
+// veículos e uma forma de exibir suas
+// informações. Crie um carro e uma moto a
+// partir dessas classes, com dados fictícios, e
+// exiba suas informações.
+
+class Carro {
+  double quilometragem;
+  int num_portas;
+
+  Carro({
+    required this.quilometragem,
+    required this.num_portas,
+  });
+
+  void apresenta() {
+    print("quilometragem: $quilometragem");
+    print("portas: $num_portas");
+  }
+}
+
+class Moto {
+  int cilindradas;
+  bool partidaeletrica;
+
+    Moto({
+      required this.cilindradas,
+      required this.partidaeletrica,
+    })
+
+   void apresenta() {
+    print("cilindradas: $cilindradas");
+    print("partida eletrica: $partidaeletrica");
+  }
+}
+
+// Para colocar os veículos no pátio de vendas, cada veículo
+// precisa ter um adesivo que indica o estado desse veículo como
+// uma forma de transparência para o consumidor. Portanto,
+// se um carro tiver menos que 15 mil km rodados por ano,
+// ele é considerado seminovo; se tiver entre 15 mil e 20 mil
+// km rodados por ano, ele é considerado usado; se tiver mais
+// que 20 mil km rodados por ano, ele é considerado antigo.
+// se uma moto tiver menos que 125 cilindradas, ela é
+// considerada leve; se tiver entre 125 e 500 cilindradas, ela é
+// considerada normal; se tiver mais que 500 cilindradas, ela
+// é considerada esportiva
+
+
+void main() {
+  Carro carro = Carro(quilometragem: 12000, num_portas: 4);
+  Moto moto = Moto(cilindradas: 250, partidaeletrica: true);
+
+  print("Informações do Carro:");
+  carro.apresenta();
+
+  // Verifica o estado do carro
+  if (carro.quilometragem < 15000) {
+    print("O carro é seminovo");
+  } else if (carro.quilometragem >= 15000 && carro.quilometragem <= 20000) {
+    print("O carro é usado");
+  } else {
+    print("O carro é antigo");
+  }
+
+  print("\nInformações da Moto:");
+  moto.apresenta();
+
+  // Verifica o estado da moto
+  if (moto.cilindradas < 125) {
+    print("A moto é leve");
+  } else if (moto.cilindradas >= 125 && moto.cilindradas <= 500) {
+    print("A moto é normal");
+  } else {
+    print("A moto é esportiva");
+  }
+}
