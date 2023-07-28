@@ -1,0 +1,25 @@
+// 02 Utilizando Stream e async * Escreva uma função assíncrona em Dart chamada countDownStream que recebe um número máximo como parâmetro . A função deve retornar um Stream que emite contagem regressiva de 5 até 1 , com um atraso de 1 segundo entre cada emissão . Em seguida , escreva um programa principal que assina o Stream retornado pela função count Down Stream e exibe os números emitidos .
+
+import 'dart:async';
+
+// Função assíncrona que retorna um Stream de contagem regressiva
+Stream<int> countDownStream(int max) async* {
+  for (int i = max; i >= 1; i--) {
+    // Emitindo o valor atual do contador
+    yield i;
+
+    // Atraso de 1 segundo entre as emissões
+    await Future.delayed(Duration(seconds: 1));
+  }
+}
+
+// Programa principal que assina o Stream retornado pela função countDownStream
+void main() {
+  // Chamando a função countDownStream e obtendo o Stream
+  Stream<int> stream = countDownStream(5);
+
+  // Assinando o Stream e exibindo os números emitidos
+  stream.listen((numero) {
+    print(numero);
+  });
+}
