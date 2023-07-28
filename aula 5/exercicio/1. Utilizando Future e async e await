@@ -1,0 +1,22 @@
+// 01 Utilizando Future e async / await Escreva uma função assíncrona em Dart chamada fetchData que simula uma requisição assíncrona a um servidor . A função deve retornar um Future que resolve para uma string " Dados obtidos " após um atraso de 3 segundos . Em seguida , escreva um programa principal que chama a função fetch Data utilizando a palavra - chave await e exibe a mensagem de dados obtidos .
+
+import 'dart:async';
+
+// Função assíncrona que simula uma requisição assíncrona a um servidor
+Future<String> fetchData() async {
+  // Simulando um atraso de 3 segundos com o método Future.delayed
+  await Future.delayed(Duration(seconds: 3));
+
+  // Retorna a string "Dados obtidos"
+  return "Dados obtidos";
+}
+
+// Programa principal que chama a função fetchData e exibe a mensagem de dados obtidos
+void main() async {
+  print("Início da requisição");
+
+  // Chamando a função fetchData utilizando await para esperar a resposta
+  String dados = await fetchData();
+
+  print("Fim da requisição. Dados recebidos: $dados");
+}
