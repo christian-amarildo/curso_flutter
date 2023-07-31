@@ -1,0 +1,85 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text('Minhas Receitas')),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch, // Centraliza horizontalmente
+          children: [
+            Center(
+              child: Text(
+              'Sobremesas',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            ),
+            
+            Text(
+              'torta de maçã',
+              style: TextStyle(fontSize: 18),
+            ),
+            Text(
+              'Mouse de chocolate',
+              style: TextStyle(fontSize: 18),
+            ),
+            Text(
+              'Pudim de Leite Condensado',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 20), // Espaçamento entre as categorias
+            // Título "Pratos principais"
+            Center(
+              child: Text(
+              'Pratos principais',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            ),
+            // Nomes das receitas de Pratos principais
+            Text(
+              'Frango Assado com Batatas',
+              style: TextStyle(fontSize: 18),
+            ),
+            Text(
+              'Espaguete à bolonhesa',
+              style: TextStyle(fontSize: 18),
+            ),
+            Text(
+              'Risoto de Cogumelos',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 20), // Espaçamento entre as categorias
+            // Título "Aperitivos"
+            Center(
+              child: Text(
+              'Aperitivos',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            ),
+            
+            // Nomes das receitas de Aperitivos
+            Text(
+              'Bolinhos de Queijo',
+              style: TextStyle(fontSize: 18),
+            ),
+            Text(
+              'Bruschetta de Tomate e Manjericão',
+              style: TextStyle(fontSize: 18),
+            ),
+            Text(
+              'Canapés de Salmão com Cream Cheese',
+              style: TextStyle(fontSize: 18),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
