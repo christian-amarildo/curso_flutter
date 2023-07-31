@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  final Map <String, List<String>> dados = {
+
+  runApp(MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+      final Map<String, List<String>> dados = {
     'Sobremesas': [
       'Torta de Maça',
       'Mousse de Chocolate',
@@ -12,26 +21,28 @@ void main() {
       'Espaguete à Bolonhesa',
       'Risoto de Cogumelos',
     ],
-    'aperitivos': [
+    'Aperitivos': [
       'Bolinhos de Queijo',
-      'Bruschetta de Tomate e Mangericão',
+      'Bruschetta de Tomate e Manjericão',
       'Canapés de Salmão com Cream Cheese',
     ]
   };
-  runApp(MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text('minhas receitas')),
-        body: Center(
-          child: Text('Sem receitas ainda.'),
-        ),
+        body: Column (
+          children: [
+            for (var dado in dados.entries)
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(dado.key),
+                Text(dado.value[0] , style: , )
+
+              ],
+            )
+          ],
+        )
       ),
     );
   }
