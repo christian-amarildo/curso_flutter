@@ -4,6 +4,10 @@
 
 Este repositório foi criado para armazenar minhas resoluções de exercícios e resumos de materiais e cursos que estou estudando. Aqui, você encontrará uma organização cuidadosa dos conteúdos, permitindo-me manter um registro do meu progresso acadêmico e profissional.
 
+## Sobre o Curso
+
+Seja bem-vindo(a) ao Curso de Flutter de Férias! Neste repositório, você encontrará todo o material e exercícios necessários para participar dessa experiência enriquecedora. O curso é voltado para estudantes interessados em desenvolvimento de aplicativos móveis com Flutter, uma poderosa framework da linguagem Dart.
+
 ## Estrutura do Repositório
 
 O repositório está organizado da seguinte forma:
