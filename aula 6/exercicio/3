@@ -36,9 +36,9 @@ class MainApp extends StatelessWidget {
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(dado.key),
-                Text(dado.value[0] , style: , )
-
+                Text(dado.key , style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold) ,),
+                for (String prato in dado.value) Text(prato , style: TextStyle(fontSize: 18), )
+                
               ],
             )
           ],
