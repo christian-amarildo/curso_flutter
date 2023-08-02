@@ -1,0 +1,81 @@
+// Importação do pacote de widgets do Flutter.
+import 'package:flutter/material.dart';
+
+// Função principal do aplicativo Flutter.
+void main() {
+  runApp(MainApp());
+}
+
+// Classe principal do aplicativo, que é um widget Stateless.
+class MainApp extends StatelessWidget {
+  // Construtor da classe, mas não é utilizado aqui.
+  MainApp({super.key});
+
+  // Dados das receitas, representados por um mapa com categorias e listas de receitas.
+  final Map<String, List<String>> dados = {
+    'Sobremesas': [
+      'Torta de Maça',
+      'Mousse de Chocolate',
+      'Pudim de leite condensado',
+    ],
+    'Pratos principais': [
+      'Frango Assado com Batatas',
+      'Espaguete à Bolonhesa',
+      'Risoto de Cogumelos',
+    ],
+    'Aperitivos': [
+      'Bolinhos de Queijo',
+      'Bruschetta de Tomate e Manjericão',
+      'Canapés de Salmão com Cream Cheese',
+    ],
+  };
+
+  // Variável para armazenar a categoria selecionada pelo usuário, que pode ser nula.
+  final String? categoriaUsuario = null;
+  final String busca = '';
+
+  // Método que constrói a interface do usuário.
+  @override
+  Widget build(BuildContext context) {
+    // Retorna o widget MaterialApp, que define a estrutura básica do aplicativo.
+    return MaterialApp(
+      home: Scaffold(
+        // Corpo do aplicativo, que é uma coluna com os elementos.
+        body: Column(
+          // Mapeia as entradas do mapa 'dados' para construir a lista de widgets.
+          children: dados.entries
+          .map((categoria) {
+              // Verifica se a categoria selecionada é nula ou se é igual à categoria atual do mapa.
+              if (categoriaUsuario == null || categoriaUsuario == categoria.key) {
+                // Retorna um novo Column contendo o nome da categoria como um título, e a lista de receitas.
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    if(busca.isEmpty)
+                      Center(
+                        child: Text(
+                          categoria.key,
+                          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                        ),
+                    ),
+                    // Usa o for para criar widgets Text para cada receita da categoria.
+                    for (String prato in categoria.value) 
+                      if(prato.contains(busca) || busca.isEmpty)
+                        Text(
+                          prato,
+                          style: const TextStyle(fontSize: 18),
+                        ),
+                  ],
+                );
+              } else {
+                // Caso a categoria não seja selecionada, retorna um Container vazio para não exibir nada.
+                return Container();
+              }
+            },
+          ).toList(),
+        ),
+      ),
+    );
+  }
+}
