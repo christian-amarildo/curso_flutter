@@ -1,5 +1,8 @@
 # Curso Flutter de Verão - aula 2 Sintaxe da Linguagem
 
+## resumo
+Nesta aula do curso de Flutter de Verão, foi abordada a sintaxe da linguagem Dart com foco nos operadores aritméticos, de comparação e lógicos. Além disso, foram apresentadas as estruturas de controle if-else, operador ternário e switch-case para tomar decisões condicionais e selecionar blocos de código com base em valores específicos. Os exercícios práticos envolveram aplicar esses conceitos em operações matemáticas, verificação de paridade de números, além de criar verificações condicionais para idade de uma pessoa e dias da semana.
+
 ## Objetivo da Aula
 Explorar os operadores aritméticos em Dart (soma, subtração, multiplicação e divisão).
 Discutir os operadores de comparação em Dart (igual, diferente, maior e menor que).
