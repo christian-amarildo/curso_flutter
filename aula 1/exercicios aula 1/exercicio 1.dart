@@ -4,7 +4,7 @@ void main() {
   // programa que declare e atribua valores às seguintes variáveis:
 
   // `nome`: deve conter o nome completo do aluno
-  final String nome = 'Enzo Gabriel da Rocha Santos';
+  final String nome = 'Christian amarildo';
 
   // `idade`: deve conter a idade do aluno, em anos
   int idade = 21;
